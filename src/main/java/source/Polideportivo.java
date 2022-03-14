@@ -5,12 +5,14 @@ public class Polideportivo implements Edificio, InstalacionDeportiva {
 	private double ancho;
 	private double largo;
 	private int numeroPisos;
+	private String nombrePolideportivo;
 
-	public Polideportivo(int numeroOficinas, double ancho, double largo, int numeroPisos) {
+	public Polideportivo(int numeroOficinas, double ancho, double largo, int numeroPisos, String nombrePolideportivo) {
 		this.numeroOficinas = numeroOficinas;
 		this.ancho = ancho;
 		this.largo = largo;
 		this.numeroPisos = numeroPisos;
+		this.nombrePolideportivo = nombrePolideportivo;
 	}
 
 	public int getNumeroOficinas() {
