@@ -1,11 +1,7 @@
 package source;
 
-public class Edificio {
+public interface Edificio {
 	
-	private String tipoInstalacion;
-	private double ancho;
-	private double largo;
-	private int numeroPisos;
-	
+	public double getSuperficieEdificio();
 
 }
