@@ -1,17 +1,25 @@
 package source;
 
 public class Polideportivo implements Edificio, InstalacionDeportiva {
+	private String nombrePolideportivo;
 	private int numeroOficinas;
 	private double ancho;
 	private double largo;
 	private int numeroPisos;
-	private String nombrePolideportivo;
 
 	public Polideportivo(int numeroOficinas, double ancho, double largo, int numeroPisos, String nombrePolideportivo) {
 		this.numeroOficinas = numeroOficinas;
 		this.ancho = ancho;
 		this.largo = largo;
 		this.numeroPisos = numeroPisos;
+		this.nombrePolideportivo = nombrePolideportivo;
+	}
+
+	public String getNombrePolideportivo() {
+		return nombrePolideportivo;
+	}
+
+	public void setNombrePolideportivo(String nombrePolideportivo) {
 		this.nombrePolideportivo = nombrePolideportivo;
 	}
 
@@ -46,7 +54,7 @@ public class Polideportivo implements Edificio, InstalacionDeportiva {
 	public void setNumeroPisos(int numeroPisos) {
 		this.numeroPisos = numeroPisos;
 	}
-
+	
 	// metodo implementado desde interface InstalacionDeportiva
 	@Override
 	public int getTipoInstalacion(String tipoInstalacion) {
